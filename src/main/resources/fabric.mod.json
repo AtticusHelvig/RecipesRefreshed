@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "recipes_refreshed",
+	"version": "${version}",
+	"name": "Recipes Refreshed",
+	"description": "Because Minecraft doesn't understand conservation of mass.",
+	"authors": [
+		"A. Helvig"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/recipes_refreshed/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.atticus.recipes_refreshed.RecipesRefreshed"
+		],
+		"client": [
+			"net.atticus.recipes_refreshed.RecipesRefreshedClient"
+		],
+		"fabric-datagen": [
+			"net.atticus.recipes_refreshed.RecipesRefreshedDataGenerator"
+		]
+	},
+	"mixins": [
+		"recipes_refreshed.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
