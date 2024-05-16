@@ -14,7 +14,14 @@
 	"license": "MIT",
 	"icon": "assets/recipes_refreshed/icon.png",
 	"environment": "*",
-	"entrypoints": {},
+	"entrypoints": {
+		"main": [
+			"net.atticus.recipes_refreshed.RecipesRefreshed"
+		],
+		"fabric-datagen": [
+			"net.atticus.recipes_refreshed.RecipesRefreshedDataGenerator"
+		]
+	},
 	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.15.11",
