@@ -8,26 +8,14 @@
 		"A. Helvig"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://www.modrinth.com/datapack/recipes-refreshed",
+		"sources": "https://github.com/AtticusHelvig/RecipesRefreshed"
 	},
 	"license": "MIT",
 	"icon": "assets/recipes_refreshed/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.atticus.recipes_refreshed.RecipesRefreshed"
-		],
-		"client": [
-			"net.atticus.recipes_refreshed.RecipesRefreshedClient"
-		],
-		"fabric-datagen": [
-			"net.atticus.recipes_refreshed.RecipesRefreshedDataGenerator"
-		]
-	},
-	"mixins": [
-		"recipes_refreshed.mixins.json"
-	],
+	"entrypoints": {},
+	"mixins": [],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.6",

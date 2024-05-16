@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hanging_sign",
+  "key": {
+    "A": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "B": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "B B",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "minecraft:mangrove_hanging_sign"
+  }
+}
