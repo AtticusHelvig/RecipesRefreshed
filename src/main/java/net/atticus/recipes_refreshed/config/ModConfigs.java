@@ -15,6 +15,7 @@ public class ModConfigs {
     public static int FENCE_GATE_COUNT;
     public static int FENCE_COUNT;
     public static int HANGING_SIGN_COUNT;
+    public static int IRON_TRAPDOOR_COUNT;
     public static int PRESSURE_PLATE_COUNT;
     public static int SIGN_COUNT;
     public static int STAIRS_COUNT;
@@ -38,6 +39,7 @@ public class ModConfigs {
         configs.addKeyValuePair(new Pair<>("fence_gate.count", 2));
         configs.addKeyValuePair(new Pair<>("fence.count", 4));
         configs.addKeyValuePair(new Pair<>("hanging_sign.count", 6));
+        configs.addKeyValuePair(new Pair<>("iron_trapdoor.count", 2));
         configs.addKeyValuePair(new Pair<>("pressure_plate.count", 6));
         configs.addKeyValuePair(new Pair<>("sign.count", 6));
         configs.addKeyValuePair(new Pair<>("stairs.count", 6));
@@ -53,11 +55,12 @@ public class ModConfigs {
         FENCE_GATE_COUNT = CONFIG.getOrDefault("fence_gate.count", 1);
         FENCE_COUNT = CONFIG.getOrDefault("fence.count", 3);
         HANGING_SIGN_COUNT = CONFIG.getOrDefault("hanging_sign.count", 6);
+        IRON_TRAPDOOR_COUNT = CONFIG.getOrDefault("iron_trapdoor.count", 1);
         PRESSURE_PLATE_COUNT = CONFIG.getOrDefault("pressure_plate.count", 6);
         SIGN_COUNT = CONFIG.getOrDefault("sign.count", 6);
         STAIRS_COUNT = CONFIG.getOrDefault("stairs.count", 4);
         TRAPDOOR_COUNT = CONFIG.getOrDefault("trapdoor.count", 6);
 
-        System.out.println("All " + configs.getConfigsList().size() + " have been set properly");
+        RecipesRefreshed.LOGGER.info(configs.getConfigsList().size() + " configs set.");
     }
 }

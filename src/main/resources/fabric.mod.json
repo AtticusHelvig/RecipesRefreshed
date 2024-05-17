@@ -17,12 +17,11 @@
 	"entrypoints": {
 		"main": [
 			"net.atticus.recipes_refreshed.RecipesRefreshed"
-		],
-		"fabric-datagen": [
-			"net.atticus.recipes_refreshed.RecipesRefreshedDataGenerator"
 		]
 	},
-	"mixins": [],
+	"mixins": [
+		"recipes_refreshed.mixins.json"
+	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.6",
